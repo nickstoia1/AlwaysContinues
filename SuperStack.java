@@ -33,6 +33,14 @@ public class SuperStack<T>{
 			return items[top];
 		}
 	}
+	public T peek() {
+		if (isEmpty()) {
+			return null;
+		}
+		else {
+			return items[top - 1];
+		}
+	}
 	
 	public void displayElements() {
 		// TODO
